@@ -177,7 +177,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 8px;
+    margin-bottom: 20px;
+    padding: 0;
   }
 }
 
@@ -275,7 +276,12 @@
   text-align: left;
   margin: auto;
 }
-
+@media (max-width: 600px) {
+  .education-container {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
 .education-container h1 {
   font-size: 32px;
   color: #333;
@@ -364,6 +370,12 @@ hr {
 
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 600px) {
+  .certification {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .certification h2 {

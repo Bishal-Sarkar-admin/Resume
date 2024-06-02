@@ -1,8 +1,19 @@
 /* File: styles.css */
 .body {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
   background-color: #f9f9f9;
   margin-top: 120px; /* Adjust based on the height of your header to prevent content overlap */
 }
+.center {
+  display: grid;
+  place-items: center; /* Centers both horizontally and vertically */
+  height: auto;
+  /* Full viewport height for demonstration */
+  /* border: 1px solid black; */
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -18,6 +29,7 @@
   @media (max-width: 600px) {
     .nav-bar {
       display: none;
+      align-items: center;
     }
   }
 }
@@ -278,8 +290,7 @@
 }
 @media (max-width: 600px) {
   .education-container {
-    width: 100%;
-    margin: 0 0 20px 0;
+    width: 80%;
   }
 }
 .education-container h1 {
@@ -328,7 +339,11 @@ hr {
   margin-top: 30px !important;
   margin-bottom: 40px !important;
 }
-
+@media (max-width: 600px) {
+  .projects-container {
+    width: 80%;
+  }
+}
 .projects-container h1 {
   font-size: 32px;
   color: #333;
@@ -362,19 +377,15 @@ hr {
 .certification {
   text-align: left;
   margin-top: 30px;
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.555);
   border-radius: 8px;
-  width: 95%;
-
-  margin-left: auto;
-  margin-right: auto;
+  width: 96.5%;
 }
 @media (max-width: 600px) {
   .certification {
-    width: 100%;
-    margin: 0;
+    width: 94%;
   }
 }
 

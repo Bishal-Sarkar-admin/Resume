@@ -21,7 +21,7 @@ submit.addEventListener("submit", (e) => {
     SecureToken: "56c4d5b5-059d-419d-884a-f96d2fbe1a0c", // add your token here
     To: "bishalsarkar450up@gmail.com",
     From: "bishalsarkar450up@gmail.com",
-    Subject: "This is the subject",
+    Subject: subject.value,
     Body: ebody,
   })
     .then((message) => {
